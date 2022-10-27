@@ -1,0 +1,32 @@
+<p routerLink="">Voltar</p>
+
+<div class="container-table">
+    <h2>Lista de Fazendas</h2>
+
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <td>Nome da fazenda</td>
+                <td>Geometria</td>
+                <td>Àrea</td>
+                <td>Centro id</td>
+                <td>ID do proprietário</td>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let farm of this.farms">
+                <td>{{ farm.name }}</td>
+                <td>{{ farm.geometry }}</td>
+                <td>{{ farm.area }}</td>
+                <td>{{ farm.centroid }}</td>
+                <td>{{ farm.creation_date }}</td>
+                <td>{{ farm.owner }}</td>
+                <td><a (click)="deletar(farm.id)" class="btn btn-danger">DELETAR</a></td>
+                <td><a (click)="atualizar(farm)" class="btn btn-success">ATUALIZAR</a></td>
+            </tr>
+        </tbody>
+        <!-- <button (click)="deletar(farm.id)" class="btn btn-danger">ATUALIZAR</button>
+        <button (click)="atualizar(farm)" class="btn btn-success">DELETAR</button> -->
+    </table>
+</div>

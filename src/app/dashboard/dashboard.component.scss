@@ -1,0 +1,26 @@
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo {
+    display: flex;
+    padding: 10px;
+    color: #1f8cb7;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.selection button {
+    padding: 5px;
+    margin: auto;
+    margin-left: 3rem;
+    border-radius: 5px;
+    color: #ffff;
+    background-color: #1f8cb7;
+
+}
