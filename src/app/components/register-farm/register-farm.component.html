@@ -4,22 +4,22 @@
         <form>
             <div class="form-group">
                 <label for="" id="farmName">Nome da fazenda</label>
-                <input type="text">
+                <input [(ngModel)]="farm.name" type="text">
                 
                 <label for="" id="area">Àrea</label>
-                <input type="text">
+                <input [(ngModel)]="farm.area" type="text">
 
                 <label for="" id="centroId">Centroid</label>
-                <input type="text"> 
+                <input [(ngModel)]="farm.centroid" type="text"> 
 
                 <label for="" id="geome">Geometria</label>
-                <input type="text">
+                <input [(ngModel)]="farm.geometry" type="text">
 
                 <label for="" id="ownerId">Id do proprietário</label>
-                <input type="text">
+                <input [(ngModel)]="farm.owner" type="text">
             </div>
             <div class="btn">
-                <button  class="btnSuccess">CADASTRAR</button>
+                <button (click)="createfarm" class="btnSuccess">CADASTRAR</button>
                 <button routerLink="/farm" class="btnCancel">CANCELAR</button>
             </div>
         </form>
