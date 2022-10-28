@@ -37,8 +37,13 @@ td {
     padding:5px;  
 } 
 
-th {
+.tab {
+    background-color: #d5cfcf;
+    color: black;
     
+}
+
+th {
     border: solid 1px rgb(0, 0, 0);
     padding: 10px;
     margin: auto;
@@ -46,15 +51,18 @@ th {
 
 }
 
-th {
-    background-color:#999;
-}
-
 #btnDel {
     background-color: #a81928de;
+    border-radius: 5px;
 }
 
-#btnUp{
+.btn-success {
+    text-decoration: none;
     color: #ffff;
-    background-color: blue;
+}
+
+#btnUpd{
+    background-color: #28a745;
+    border-radius: 5px;
+    
 }

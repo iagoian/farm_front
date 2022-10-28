@@ -40,14 +40,6 @@ export class ListFarmComponent implements OnInit {
     return ['name', 'geometry', 'area', 'centroid', 'owner'];
   }
 
-  // delete(farm: number) {
-  //   for(let i=0; i<=this.farmsArr.length-1; i++){
-  //     if(this.farmsArr[i].id == farm){
-  //       this.farmsArr.splice(i,1)
-  //     }
-  //   }
-  // }
-
   nav() {
     this.router.navigateByUrl("components/register-farm");
   }

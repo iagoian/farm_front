@@ -16,11 +16,11 @@
         </thead>
         <tbody>
             <tr *ngFor="let farm of this.farmsArr">
-                <td>{{ farm.name }}</td>
-                <td>{{ farm.geometry }}</td>
-                <td>{{ farm.area }}</td>
-                <td>{{ farm.centroid }}</td>
-                <td>{{ farm.owner }}</td>
+                <td class="tab">{{ farm.name }}</td>
+                <td class="tab">{{ farm.geometry }}</td>
+                <td class="tab">{{ farm.area }}</td>
+                <td class="tab">{{ farm.centroid }}</td>
+                <td class="tab">{{ farm.owner }}</td>
                 <td id="btnDel"><a (click)="deletar(farm.id)" class="btn-danger">DELETAR</a></td>
                 <td id="btnUpd"><a (click)="atualizar(farm)" routerLink="/update-farm"class="btn-success">ATUALIZAR</a></td>
             </tr>
